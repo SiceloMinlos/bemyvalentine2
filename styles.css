@@ -81,10 +81,10 @@
     }
     .sike {
         position: absolute;
-        top: 20px; /* Moves it above the container */
+        top: 20px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 18px;
         font-weight: bold;
-        color: gray;
+        color: black;
     }

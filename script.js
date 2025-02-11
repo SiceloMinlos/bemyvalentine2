@@ -9,11 +9,9 @@ function validateLogin() {
     const usernameHint = document.getElementById("usernameHint");
     const passwordHint = document.getElementById("passwordHint");
 
-    // Reset hints
     usernameHint.textContent = "";
     passwordHint.textContent = "";
 
-    // Correct credentials
     const correctUsername = "GRIFFY";
     const correctPassword = "2024-09-29";
 
@@ -27,7 +25,6 @@ function validateLogin() {
         return;
     }
     
-    // Redirect on success
     window.location.href = "pagetwo.html";
 }
 
@@ -48,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
     let messageIndex = 0;
 
-    // Show first message
     setMessage();
 
     nextButton.addEventListener("click", function () {
@@ -56,27 +52,25 @@ document.addEventListener("DOMContentLoaded", function () {
         if (messageIndex < messages.length) {
             setMessage();
         } else {
-            // Hide the "Next" button and show the Valentine buttons
+
             nextButton.style.display = "none";
             document.getElementById("valentineButtons").style.display = "block";
         }
     });
 
-    // Handle "Yes" and "No" button clicks
     document.getElementById("yesButton").addEventListener("click", function () {
         alert("Yay! 😁, I hope this was your first choice...I'm watching you...");
-        window.location.href = "https://www.youtube.com/watch?v=bUpR9rIrrR8"; // Redirect to your final page
+        window.location.href = "https://www.youtube.com/watch?v=bUpR9rIrrR8";
     });
 
     document.getElementById("noButton").addEventListener("click", function () {
         alert("Trick question humaniod 😑, did you really think you had that choice?");
-        // window.location.href = "finalpage.html"; // You can customize the final page for this choice
     });
 
     function setMessage() {
         messageElement.textContent = messages[messageIndex];
         messageElement.classList.remove("letter-text");
-        void messageElement.offsetWidth;  // Trigger reflow to restart animation
+        void messageElement.offsetWidth;
         messageElement.classList.add("letter-text");
     }
 });
