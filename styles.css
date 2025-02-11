@@ -79,7 +79,12 @@
             padding: 12px;
         }
     }
-
-    #username {
-        text-transform: uppercase;
+    .sike {
+        position: absolute;
+        top: 20px; /* Moves it above the container */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        font-weight: bold;
+        color: gray;
     }
