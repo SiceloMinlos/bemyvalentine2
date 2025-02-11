@@ -12,11 +12,11 @@ function validateLogin() {
     usernameHint.textContent = "";
     passwordHint.textContent = "";
 
-    const correctUsername = "GRIFFY";
+    const correctUsername = "HERMIONE";
     const correctPassword = "2024-09-29";
 
     if (username.toUpperCase() !== correctUsername) {
-        usernameHint.textContent = "I'm soft, cuddly, and sleep by your side. Who am I?";
+        usernameHint.textContent = "A girl with a brilliant mind, a book in hand, and two best friends by my side, I cast spells and fight for what’s right—who am I?";
         return;
     }
     
