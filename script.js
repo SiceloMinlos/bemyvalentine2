@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react"
+
 document.addEventListener("DOMContentLoaded", function () {
     const loginButton = document.querySelector("button");
     loginButton.addEventListener("click", validateLogin);
