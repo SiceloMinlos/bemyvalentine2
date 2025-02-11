@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Every time we talk, my heart feels a little lighter. Your smile, your laugh, the way you make everything brighter... It’s all unforgettable.",
         "I cherish all the memories we’ve made so far and look forward to creating many more with you.",
         "You make my world a better place, and I want to keep making you happy every day.",
+        "There's a lot I'd love to say but some things are better said in person",
         "So, here I am, asking the most important question…well, at least for now (wink wink, nudge nudge) 💌",
         "Will you be my Valentine? ❤ (Yes, even with a lip sore 🙂)"
     ];
